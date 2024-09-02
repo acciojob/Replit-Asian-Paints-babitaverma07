@@ -1,42 +1,33 @@
-/*  your css code here. If applicable */
 body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    margin: 0;
+    margin: 20px;
 }
 
-.grid-container {
+#grid-container {
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    grid-gap: 10px;
-    margin-bottom: 20px;
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
 }
 
 .grid-item {
-    width: 100px;
-    height: 100px;
-    background-color: lightgray;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border: 1px solid #ccc;
-    font-size: 24px;
-    color: #333;
+    align-items: center;
+    border: 1px solid #000;
+    background-color: transparent;
+    font-size: 20px;
 }
 
-input, button {
-    margin: 5px;
+input {
+    margin: 10px;
     padding: 5px;
 }
 
 button {
-    cursor: pointer;
-}
-
-button:disabled {
-    cursor: not-allowed;
-    background-color: gray;
+    padding: 5px 10px;
+    margin: 5px;
 }
